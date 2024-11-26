@@ -47,8 +47,92 @@
             </li>
           </ul>
         </address>
+        <svg class="nav-burger" width="16.8" height="14.4">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
       </div>
     </header>
+
+    <div class="nav-section">
+      <div class="nav-section-field">
+        <button type="button" class="close-button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="nav-section-list">
+          <li>
+            <a class="nav-section-link current" href="./index.html">Studio</a>
+          </li>
+          <li><a class="nav-section-link" href="">Portfolio</a></li>
+          <li><a class="nav-section-link" href="">Contacts</a></li>
+        </ul>
+        <div class="nav-address-icons">
+          <address class="nav-section-address">
+            <ul class="nav-section-address-list">
+              <li>
+                <a
+                  class="nav-section-address-link current"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="nav-section-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="nav-section-icons">
+            <li class="nav-section-icon">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="nav-section-icon-link"
+              >
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-section-icon">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                class="nav-section-icon-link"
+              >
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-section-icon">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="nav-section-icon-link"
+              >
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-section-icon">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="nav-section-icon-link"
+              >
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section class="main-page section">
@@ -58,6 +142,92 @@
           <button class="main-page-button" type="button">Order Service</button>
         </div>
       </section>
+
+      <div class="form-section">
+        <div class="form-field">
+          <button type="button" class="close-button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="form-header">
+            Leave your contacts and we will call you back
+          </p>
+          <form>
+            <div class="input-wrapper">
+              <label class="form-label" for="user-name">Name</label>
+              <div class="input-container">
+                <input
+                  class="form-input"
+                  name="user-name"
+                  id="user-name"
+                  type="text"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label class="form-label" for="user-phone">Phone</label>
+              <div class="input-container">
+                <input
+                  class="form-input"
+                  name="user-name"
+                  id="user-phone"
+                  type="tel"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label class="form-label" for="user-email">Email</label>
+              <div class="input-container">
+                <input
+                  class="form-input"
+                  name="user-name"
+                  id="user-email"
+                  type="email"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="textarea-wrapper">
+              <label class="form-label" for="user-comment">Comment</label>
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input
+                class="visually-hidden"
+                id="user-privacy"
+                type="checkbox"
+                value="true"
+                name="user-privacy"
+              />
+              <label class="checkbox-label" for="user-privacy">
+                <span class="check">
+                  <svg class="icon-check" width="10" height="8">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+
+                I accept the terms and conditions of the
+                <a href="#" class="policy">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="form-submit" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
 
       <section class="utilities section">
         <div class="container">
@@ -119,11 +289,15 @@
       </section>
 
       <section class="our-team section">
-        <div class="container">
+        <div class="team container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-card">
               <img
+                srcset="
+                  ./images/team-card/member.jpg    1x,
+                  ./images/team-card/member@2x.jpg 2x
+                "
                 src="./images/team-card/member.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -179,6 +353,10 @@
 
             <li class="our-team-card">
               <img
+                srcset="
+                  ./images/team-card/member1.jpg    1x,
+                  ./images/team-card/member1@2x.jpg 2x
+                "
                 src="./images/team-card/member1.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -234,6 +412,10 @@
 
             <li class="our-team-card">
               <img
+                srcset="
+                  ./images/team-card/member2.jpg    1x,
+                  ./images/team-card/member2@2x.jpg 2x
+                "
                 src="./images/team-card/member2.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -289,6 +471,10 @@
 
             <li class="our-team-card">
               <img
+                srcset="
+                  ./images/team-card/member3.jpg    1x,
+                  ./images/team-card/member3@2x.jpg 2x
+                "
                 src="./images/team-card/member3.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -554,88 +740,5 @@
         </div>
       </div>
     </footer>
-
-    <div class="form-section is-open">
-      <div class="form-field">
-        <button type="button" class="close-button">
-          <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="form-header">Leave your contacts and we will call you back</p>
-        <form>
-          <div class="input-wrapper">
-            <label class="form-label" for="user-name">Name</label>
-            <div class="input-container">
-              <input
-                class="form-input"
-                name="user-name"
-                id="user-name"
-                type="text"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="input-wrapper">
-            <label class="form-label" for="user-phone">Phone</label>
-            <div class="input-container">
-              <input
-                class="form-input"
-                name="user-name"
-                id="user-phone"
-                type="tel"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="input-wrapper">
-            <label class="form-label" for="user-email">Email</label>
-            <div class="input-container">
-              <input
-                class="form-input"
-                name="user-name"
-                id="user-email"
-                type="email"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="textarea-wrapper">
-            <label class="form-label" for="user-comment">Comment</label>
-            <textarea
-              class="form-textarea"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Text input"
-            ></textarea>
-          </div>
-          <div class="form-checkbox">
-            <input
-              class="visually-hidden"
-              id="user-privacy"
-              type="checkbox"
-              value="true"
-              name="user-privacy"
-            />
-            <label class="checkbox-label" for="user-privacy">
-              <span class="check">
-                <svg class="icon-check" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a href="#" class="policy">Privacy Policy</a>
-            </label>
-          </div>
-          <button class="form-submit" type="submit">Send</button>
-        </form>
-      </div>
-    </div>
   </body>
 </html>
