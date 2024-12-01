@@ -842,6 +842,7 @@ input[type="checkbox"]:checked + .checkbox-label .check {
   flex-direction: column;
   gap: 72px;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -855,6 +856,7 @@ input[type="checkbox"]:checked + .checkbox-label .check {
 @media screen and (min-width: 1158px) {
   .our-team-list {
     flex-direction: row;
+    
   }
 }
 
